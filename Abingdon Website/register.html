@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Abingdon Campus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/Abingdon%206.jpg" alt="Abingdon Campus Logo">
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="courses.html" class="nav-link">Our Courses</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Registration Form -->
+    <section class="register-section">
+        <h2>Register for Courses</h2>
+        <form action="submit_registration.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="course">Course:</label>
+            <select id="course" name="course">
+                <option value="it">Diploma in IT</option>
+                <option value="sales">Diploma in Sales</option>
+                <option value="business">Diploma in Business Management</option>
+                <option value="bakery">Diploma in Bakery</option>
+                <option value="english">Diploma in English</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="images/Abingdon%206.jpg" alt="Abingdon Campus Logo">
+        <p>© 2024 Abingdon Campus. All Rights Reserved.</p>
+        <p>Empowering Your Future</p>
+    </footer>
+</body>
+
+</html>
